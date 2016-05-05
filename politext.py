@@ -1,8 +1,5 @@
 from flask import Flask, request, redirect
 import twilio.twiml, datetime, urllib, json
-import sys
-
-sys.path.append()
 
 # author : Brian Mejia
 app = Flask(__name__)
