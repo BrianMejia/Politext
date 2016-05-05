@@ -1,5 +1,8 @@
 from flask import Flask, request, redirect
 import twilio.twiml, datetime, urllib, json
+import sys
+
+sys.path.append()
 
 # author : Brian Mejia
 app = Flask(__name__)
@@ -28,10 +31,10 @@ def search_candidate():
         resp.message("Hello! I search for data on the 2016 US Presidential Primaries and Caucuses!\n" +
             "Please use this format to get a proper response: <gop/dem> <state> [candidate(s)].\n" +
             "Example: dem MI Sanders\nThank you!\n")
-        return render_template('index.html');
+        return '<h1>This sends messages to phones. Text the # (862) 256-2358</h1>';
     elif body.lower() == "!data":
         resp.message("All data is received from the HuffPost Pollster API.\nPython and Twilio were used to create this!\nCreated by Brian Mejia")
-        return render_template('index.html');
+        return '<h1>This sends messages to phones. Text the # (862) 256-2358</h1>';
     
     body = body.split()
     if len(body) >= 2:
@@ -41,7 +44,7 @@ def search_candidate():
         c = []
     else:
         resp.message("Error: Not enough parameters. Use <party> <state> [choice(s)].")
-        return render_template('index.html');
+        return '<h1>This sends messages to phones. Text the # (862) 256-2358</h1>';
     if len(body) >= 3:
         c = body[2:]
     elif len(body) == 2:
@@ -62,7 +65,7 @@ def search_candidate():
                 if not item['estimates']:
                     message_str = "Error: There are no estimates for the %s. Try another primary/caucus." %item['title']
                     resp.message(message_str)
-                    return render_template('index.html');
+                    return '<h1>This sends messages to phones. Text the # (862) 256-2358</h1>';
                 already_chosen = []
                 choice_scores = []
                 for estimate in item['estimates']:
@@ -80,11 +83,11 @@ def search_candidate():
                 else:
                     message_str = "Error: There are no estimates for candidates. Try again."
                 resp.message(message_str)
-                return render_template('index.html');
+                return '<h1>This sends messages to phones. Text the # (862) 256-2358</h1>';
         resp.message("Error: State is not in data.\n")
     else:
         resp.message("Error: Party or Choice is not in data.\n")
-    return render_template('index.html');
+    return '<h1>This sends messages to phones. Text the # (862) 256-2358</h1>';
 
 if __name__ == "__main__":
     app.run(debug=True)
