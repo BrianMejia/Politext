@@ -1,0 +1,2733 @@
+[
+  {
+    "title": "2016 National Republican Primary",
+    "slug": "2016-national-gop-primary",
+    "topic": "2016-president-gop-primary",
+    "state": "US",
+    "short_title": "2016 National Republican Primary",
+    "election_date": null,
+    "poll_count": 335,
+    "last_updated": "2016-04-01T15:32:26.000Z",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-national-gop-primary",
+    "estimates": [
+      {
+        "choice": "Trump",
+        "value": 45.3,
+        "lead_confidence": null,
+        "first_name": "Donald",
+        "last_name": "Trump",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Cruz",
+        "value": 31.8,
+        "lead_confidence": null,
+        "first_name": "Ted",
+        "last_name": "Cruz",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Kasich",
+        "value": 19.8,
+        "lead_confidence": null,
+        "first_name": "John",
+        "last_name": "Kasich",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Undecided",
+        "value": 6.1,
+        "lead_confidence": null,
+        "first_name": null,
+        "last_name": null,
+        "party": null,
+        "incumbent": null
+      },
+      {
+        "choice": "Other",
+        "value": 3.6,
+        "lead_confidence": null,
+        "first_name": null,
+        "last_name": null,
+        "party": null,
+        "incumbent": null
+      }
+    ]
+  },
+  {
+    "title": "2016 Iowa Republican Presidential Caucus",
+    "slug": "2016-iowa-presidential-republican-caucus",
+    "topic": "2016-president-gop-primary",
+    "state": "IA",
+    "short_title": "IA Republican Presidential Caucus",
+    "election_date": "2016-02-01",
+    "poll_count": 96,
+    "last_updated": "2016-02-01T12:58:48.000Z",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-iowa-presidential-republican-caucus",
+    "estimates": [
+      {
+        "choice": "Trump",
+        "value": 30.7,
+        "lead_confidence": null,
+        "first_name": "Donald",
+        "last_name": "Trump",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Cruz",
+        "value": 23.8,
+        "lead_confidence": null,
+        "first_name": "Ted",
+        "last_name": "Cruz",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Rubio",
+        "value": 17.4,
+        "lead_confidence": null,
+        "first_name": "Marco",
+        "last_name": "Rubio",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Carson",
+        "value": 7.7,
+        "lead_confidence": null,
+        "first_name": "Ben",
+        "last_name": "Carson",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Bush",
+        "value": 3.9,
+        "lead_confidence": null,
+        "first_name": "Jeb",
+        "last_name": "Bush",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Paul",
+        "value": 3.9,
+        "lead_confidence": null,
+        "first_name": "Rand",
+        "last_name": "Paul",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Huckabee",
+        "value": 3.1,
+        "lead_confidence": null,
+        "first_name": "Mike",
+        "last_name": "Huckabee",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Kasich",
+        "value": 2.6,
+        "lead_confidence": null,
+        "first_name": "John",
+        "last_name": "Kasich",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Christie",
+        "value": 2.3,
+        "lead_confidence": null,
+        "first_name": "Chris",
+        "last_name": "Christie",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Fiorina",
+        "value": 2.1,
+        "lead_confidence": null,
+        "first_name": "Carly",
+        "last_name": "Fiorina",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Santorum",
+        "value": 1.2,
+        "lead_confidence": null,
+        "first_name": "Rick",
+        "last_name": "Santorum",
+        "party": "Rep",
+        "incumbent": false
+      }
+    ]
+  },
+  {
+    "title": "2016 Utah Republican Presidential Caucus",
+    "slug": "2016-utah-presidential-republican-primary",
+    "topic": "2016-president-gop-primary",
+    "state": "UT",
+    "short_title": "UT Republican Presidential Caucus",
+    "election_date": "2016-03-22",
+    "poll_count": 7,
+    "last_updated": "2016-03-21T15:12:17.000Z",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-utah-presidential-republican-primary",
+    "estimates": [
+      {
+        "choice": "Cruz",
+        "value": 53.0,
+        "lead_confidence": null,
+        "first_name": "Ted",
+        "last_name": "Cruz",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Rubio",
+        "value": 17.0,
+        "lead_confidence": null,
+        "first_name": "Marco",
+        "last_name": "Rubio",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Trump",
+        "value": 11.5,
+        "lead_confidence": null,
+        "first_name": "Donald",
+        "last_name": "Trump",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Bush",
+        "value": 9.0,
+        "lead_confidence": null,
+        "first_name": "Jeb",
+        "last_name": "Bush",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Carson",
+        "value": 9.0,
+        "lead_confidence": null,
+        "first_name": "Ben",
+        "last_name": "Carson",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Kasich",
+        "value": 4.0,
+        "lead_confidence": null,
+        "first_name": "John",
+        "last_name": "Kasich",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Undecided",
+        "value": 11.0,
+        "lead_confidence": null,
+        "first_name": null,
+        "last_name": null,
+        "party": null,
+        "incumbent": null
+      },
+      {
+        "choice": "Other",
+        "value": 2.0,
+        "lead_confidence": null,
+        "first_name": null,
+        "last_name": null,
+        "party": null,
+        "incumbent": null
+      }
+    ]
+  },
+  {
+    "title": "2016 Utah Democratic Presidential Caucus ",
+    "slug": "2016-utah-presidential-democratic-caucus",
+    "topic": "2016-president-gop-primary",
+    "state": "UT",
+    "short_title": "UT Democratic Presidential Caucus",
+    "election_date": "2016-03-22",
+    "poll_count": 4,
+    "last_updated": "2016-03-21T18:37:17.000Z",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-utah-presidential-democratic-caucus",
+    "estimates": []
+  },
+  {
+    "title": "2016 New Hampshire Republican Presidential Primary",
+    "slug": "2016-new-hampshire-presidential-republican-primary",
+    "topic": "2016-president-gop-primary",
+    "state": "NH",
+    "short_title": "New Hampshire Republican Presidential Primary",
+    "election_date": "2016-02-09",
+    "poll_count": 101,
+    "last_updated": "2016-02-09T02:28:30.000Z",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-new-hampshire-presidential-republican-primary",
+    "estimates": [
+      {
+        "choice": "Trump",
+        "value": 30.7,
+        "lead_confidence": null,
+        "first_name": "Donald",
+        "last_name": "Trump",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Rubio",
+        "value": 15.3,
+        "lead_confidence": null,
+        "first_name": "Marco",
+        "last_name": "Rubio",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Kasich",
+        "value": 14.1,
+        "lead_confidence": null,
+        "first_name": "John",
+        "last_name": "Kasich",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Cruz",
+        "value": 11.9,
+        "lead_confidence": null,
+        "first_name": "Ted",
+        "last_name": "Cruz",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Bush",
+        "value": 10.0,
+        "lead_confidence": null,
+        "first_name": "Jeb",
+        "last_name": "Bush",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Christie",
+        "value": 5.6,
+        "lead_confidence": null,
+        "first_name": "Chris",
+        "last_name": "Christie",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Fiorina",
+        "value": 4.4,
+        "lead_confidence": null,
+        "first_name": "Carly",
+        "last_name": "Fiorina",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Carson",
+        "value": 2.7,
+        "lead_confidence": null,
+        "first_name": "Ben",
+        "last_name": "Carson",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Paul",
+        "value": 1.8,
+        "lead_confidence": null,
+        "first_name": "Rand",
+        "last_name": "Paul",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Santorum",
+        "value": 0.7,
+        "lead_confidence": null,
+        "first_name": "Rick",
+        "last_name": "Santorum",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Undecided",
+        "value": 6.5,
+        "lead_confidence": null,
+        "first_name": null,
+        "last_name": null,
+        "party": null,
+        "incumbent": null
+      },
+      {
+        "choice": "Other",
+        "value": 0.7,
+        "lead_confidence": null,
+        "first_name": null,
+        "last_name": null,
+        "party": null,
+        "incumbent": null
+      }
+    ]
+  },
+  {
+    "title": "2016 South Carolina Republican Presidential Primary",
+    "slug": "2016-south-carolina-presidential-republican-primary",
+    "topic": "2016-president-gop-primary",
+    "state": "SC",
+    "short_title": "SC Republican Presidential Primary",
+    "election_date": "2016-02-20",
+    "poll_count": 47,
+    "last_updated": "2016-02-19T22:48:32.000Z",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-south-carolina-presidential-republican-primary",
+    "estimates": [
+      {
+        "choice": "Trump",
+        "value": 33.9,
+        "lead_confidence": null,
+        "first_name": "Donald",
+        "last_name": "Trump",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Cruz",
+        "value": 19.3,
+        "lead_confidence": null,
+        "first_name": "Ted",
+        "last_name": "Cruz",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Rubio",
+        "value": 15.9,
+        "lead_confidence": null,
+        "first_name": "Marco",
+        "last_name": "Rubio",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Bush",
+        "value": 9.7,
+        "lead_confidence": null,
+        "first_name": "Jeb",
+        "last_name": "Bush",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Kasich",
+        "value": 8.9,
+        "lead_confidence": null,
+        "first_name": "John",
+        "last_name": "Kasich",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Carson",
+        "value": 6.0,
+        "lead_confidence": null,
+        "first_name": "Ben",
+        "last_name": "Carson",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Undecided",
+        "value": 4.8,
+        "lead_confidence": null,
+        "first_name": null,
+        "last_name": null,
+        "party": null,
+        "incumbent": null
+      },
+      {
+        "choice": "Other",
+        "value": 1.0,
+        "lead_confidence": null,
+        "first_name": null,
+        "last_name": null,
+        "party": null,
+        "incumbent": null
+      }
+    ]
+  },
+  {
+    "title": "2016 Florida Republican Presidential Primary",
+    "slug": "2016-florida-presidential-republican-primary",
+    "topic": "2016-president-gop-primary",
+    "state": "FL",
+    "short_title": "FL Republican Presidential Primary",
+    "election_date": "2016-03-15",
+    "poll_count": 62,
+    "last_updated": "2016-04-01T20:02:22.000Z",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-florida-presidential-republican-primary",
+    "estimates": [
+      {
+        "choice": "Trump",
+        "value": 45.1,
+        "lead_confidence": null,
+        "first_name": "Donald",
+        "last_name": "Trump",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Rubio",
+        "value": 23.4,
+        "lead_confidence": null,
+        "first_name": "Marco",
+        "last_name": "Rubio",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Cruz",
+        "value": 18.5,
+        "lead_confidence": null,
+        "first_name": "Ted",
+        "last_name": "Cruz",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Kasich",
+        "value": 9.2,
+        "lead_confidence": null,
+        "first_name": "John",
+        "last_name": "Kasich",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Other",
+        "value": 1.3,
+        "lead_confidence": null,
+        "first_name": null,
+        "last_name": null,
+        "party": null,
+        "incumbent": null
+      }
+    ]
+  },
+  {
+    "title": "2016 North Carolina Republican Presidential Primary",
+    "slug": "2016-north-carolina-republican-presidential-primary",
+    "topic": "2016-president-gop-primary",
+    "state": "NC",
+    "short_title": "2016 NC GOP Presidential Primary ",
+    "election_date": "2016-03-15",
+    "poll_count": 33,
+    "last_updated": "2016-03-14T15:57:47.000Z",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-north-carolina-republican-presidential-primary",
+    "estimates": [
+      {
+        "choice": "Trump",
+        "value": 39.3,
+        "lead_confidence": null,
+        "first_name": "Donald",
+        "last_name": "Trump",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Cruz",
+        "value": 24.9,
+        "lead_confidence": null,
+        "first_name": "Ted",
+        "last_name": "Cruz",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Rubio",
+        "value": 13.5,
+        "lead_confidence": null,
+        "first_name": "Marco",
+        "last_name": "Rubio",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Kasich",
+        "value": 10.9,
+        "lead_confidence": null,
+        "first_name": "John",
+        "last_name": "Kasich",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Carson",
+        "value": 6.7,
+        "lead_confidence": null,
+        "first_name": "Ben",
+        "last_name": "Carson",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Bush",
+        "value": 2.8,
+        "lead_confidence": null,
+        "first_name": "Jeb",
+        "last_name": "Bush",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Christie",
+        "value": 2.1,
+        "lead_confidence": null,
+        "first_name": "Chris",
+        "last_name": "Christie",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Paul",
+        "value": 1.4,
+        "lead_confidence": null,
+        "first_name": "Rand",
+        "last_name": "Paul",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Huckabee",
+        "value": 1.3,
+        "lead_confidence": null,
+        "first_name": "Mike",
+        "last_name": "Huckabee",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Santorum",
+        "value": 0.3,
+        "lead_confidence": null,
+        "first_name": "Rick",
+        "last_name": "Santorum",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Fiorina",
+        "value": 0.1,
+        "lead_confidence": null,
+        "first_name": "Carly",
+        "last_name": "Fiorina",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Undecided",
+        "value": 6.4,
+        "lead_confidence": null,
+        "first_name": null,
+        "last_name": null,
+        "party": null,
+        "incumbent": null
+      }
+    ]
+  },
+  {
+    "title": "2016 Ohio Republican Presidential Primary",
+    "slug": "2016-ohio-republican-presidential-primary",
+    "topic": "2016-president-gop-primary",
+    "state": "OH",
+    "short_title": "2016 OH Republican Presidential Primary  ",
+    "election_date": "2016-03-15",
+    "poll_count": 18,
+    "last_updated": "2016-03-14T17:13:36.000Z",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-ohio-republican-presidential-primary",
+    "estimates": [
+      {
+        "choice": "Kasich",
+        "value": 40.1,
+        "lead_confidence": null,
+        "first_name": "John",
+        "last_name": "Kasich",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Trump",
+        "value": 37.0,
+        "lead_confidence": null,
+        "first_name": "Donald",
+        "last_name": "Trump",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Cruz",
+        "value": 14.6,
+        "lead_confidence": null,
+        "first_name": "Ted",
+        "last_name": "Cruz",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Rubio",
+        "value": 3.2,
+        "lead_confidence": null,
+        "first_name": "Marco",
+        "last_name": "Rubio",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Undecided",
+        "value": 3.7,
+        "lead_confidence": null,
+        "first_name": null,
+        "last_name": null,
+        "party": null,
+        "incumbent": null
+      },
+      {
+        "choice": "Other",
+        "value": 0.5,
+        "lead_confidence": null,
+        "first_name": null,
+        "last_name": null,
+        "party": null,
+        "incumbent": null
+      }
+    ]
+  },
+  {
+    "title": "2016 California Republican Presidential Primary",
+    "slug": "2016-california-republican-presidential-primary",
+    "topic": "2016-president-gop-primary",
+    "state": "CA",
+    "short_title": "CA Republican Presidential Primary",
+    "election_date": "2016-06-07",
+    "poll_count": 11,
+    "last_updated": "2016-03-29T16:52:58.000Z",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-california-republican-presidential-primary",
+    "estimates": [
+      {
+        "choice": "Trump",
+        "value": 37.5,
+        "lead_confidence": null,
+        "first_name": "Donald",
+        "last_name": "Trump",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Cruz",
+        "value": 26.1,
+        "lead_confidence": null,
+        "first_name": "Ted",
+        "last_name": "Cruz",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Kasich",
+        "value": 13.8,
+        "lead_confidence": null,
+        "first_name": "John",
+        "last_name": "Kasich",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Rubio",
+        "value": 13.8,
+        "lead_confidence": null,
+        "first_name": "Marco",
+        "last_name": "Rubio",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Undecided",
+        "value": 9.9,
+        "lead_confidence": null,
+        "first_name": null,
+        "last_name": null,
+        "party": null,
+        "incumbent": null
+      },
+      {
+        "choice": "Other",
+        "value": 2.0,
+        "lead_confidence": null,
+        "first_name": null,
+        "last_name": null,
+        "party": null,
+        "incumbent": null
+      }
+    ]
+  },
+  {
+    "title": "2016 Kentucky Republican Presidential Caucus",
+    "slug": "2016-kentucky-republican-presidential-caucus",
+    "topic": "2016-president-gop-primary",
+    "state": "KY",
+    "short_title": "2016 KY GOP Presidential Caucus",
+    "election_date": "2016-03-05",
+    "poll_count": 6,
+    "last_updated": "2016-02-29T22:32:29.000Z",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-kentucky-republican-presidential-caucus",
+    "estimates": [
+      {
+        "choice": "Trump",
+        "value": 35.0,
+        "lead_confidence": null,
+        "first_name": "Donald",
+        "last_name": "Trump",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Paul",
+        "value": 26.0,
+        "lead_confidence": null,
+        "first_name": "Rand",
+        "last_name": "Paul",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Rubio",
+        "value": 22.1,
+        "lead_confidence": null,
+        "first_name": "Marco",
+        "last_name": "Rubio",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Cruz",
+        "value": 15.0,
+        "lead_confidence": null,
+        "first_name": "Ted",
+        "last_name": "Cruz",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Bush",
+        "value": 12.0,
+        "lead_confidence": null,
+        "first_name": "Jeb",
+        "last_name": "Bush",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Walker",
+        "value": 11.0,
+        "lead_confidence": null,
+        "first_name": "Scott",
+        "last_name": "Walker",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Huckabee",
+        "value": 10.0,
+        "lead_confidence": null,
+        "first_name": "Mike",
+        "last_name": "Huckabee",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Carson",
+        "value": 7.0,
+        "lead_confidence": null,
+        "first_name": "Ben",
+        "last_name": "Carson",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Kasich",
+        "value": 6.0,
+        "lead_confidence": null,
+        "first_name": "John",
+        "last_name": "Kasich",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Fiorina",
+        "value": 4.0,
+        "lead_confidence": null,
+        "first_name": "Carly",
+        "last_name": "Fiorina",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Christie",
+        "value": 2.0,
+        "lead_confidence": null,
+        "first_name": "Chris",
+        "last_name": "Christie",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Jindal",
+        "value": 2.0,
+        "lead_confidence": null,
+        "first_name": "Bobby",
+        "last_name": "Jindal",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Perry",
+        "value": 2.0,
+        "lead_confidence": null,
+        "first_name": "Rick",
+        "last_name": "Perry",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Santorum",
+        "value": 2.0,
+        "lead_confidence": null,
+        "first_name": "Rick",
+        "last_name": "Santorum",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Undecided",
+        "value": 15.0,
+        "lead_confidence": null,
+        "first_name": null,
+        "last_name": null,
+        "party": null,
+        "incumbent": null
+      }
+    ]
+  },
+  {
+    "title": "2016 Texas Republican Presidential Primary",
+    "slug": "2016-texas-republican-presidential-primary",
+    "topic": "2016-president-gop-primary",
+    "state": "TX",
+    "short_title": "2016 TX GOP Presidential Primary ",
+    "election_date": "2016-03-01",
+    "poll_count": 30,
+    "last_updated": "2016-03-01T05:54:19.000Z",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-texas-republican-presidential-primary",
+    "estimates": [
+      {
+        "choice": "Cruz",
+        "value": 35.9,
+        "lead_confidence": null,
+        "first_name": "Ted",
+        "last_name": "Cruz",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Trump",
+        "value": 30.3,
+        "lead_confidence": null,
+        "first_name": "Donald",
+        "last_name": "Trump",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Rubio",
+        "value": 16.6,
+        "lead_confidence": null,
+        "first_name": "Marco",
+        "last_name": "Rubio",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Kasich",
+        "value": 7.2,
+        "lead_confidence": null,
+        "first_name": "John",
+        "last_name": "Kasich",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Carson",
+        "value": 6.6,
+        "lead_confidence": null,
+        "first_name": "Ben",
+        "last_name": "Carson",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Undecided",
+        "value": 4.7,
+        "lead_confidence": null,
+        "first_name": null,
+        "last_name": null,
+        "party": null,
+        "incumbent": null
+      },
+      {
+        "choice": "Other",
+        "value": 1.0,
+        "lead_confidence": null,
+        "first_name": null,
+        "last_name": null,
+        "party": null,
+        "incumbent": null
+      }
+    ]
+  },
+  {
+    "title": "2016 Louisiana Republican Presidential Primary",
+    "slug": "2016-louisiana-republican-presidential-primary",
+    "topic": "2016-president-gop-primary",
+    "state": "LA",
+    "short_title": "2016 LA GOP Presidential Primary",
+    "election_date": "2016-03-05",
+    "poll_count": 7,
+    "last_updated": "2016-03-05T17:15:40.000Z",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-louisiana-republican-presidential-primary",
+    "estimates": [
+      {
+        "choice": "Trump",
+        "value": 48.0,
+        "lead_confidence": null,
+        "first_name": "Donald",
+        "last_name": "Trump",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Cruz",
+        "value": 26.0,
+        "lead_confidence": null,
+        "first_name": "Ted",
+        "last_name": "Cruz",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Rubio",
+        "value": 13.9,
+        "lead_confidence": null,
+        "first_name": "Marco",
+        "last_name": "Rubio",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Carson",
+        "value": 6.0,
+        "lead_confidence": null,
+        "first_name": "Ben",
+        "last_name": "Carson",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Kasich",
+        "value": 5.0,
+        "lead_confidence": null,
+        "first_name": "John",
+        "last_name": "Kasich",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Undecided",
+        "value": 9.0,
+        "lead_confidence": null,
+        "first_name": null,
+        "last_name": null,
+        "party": null,
+        "incumbent": null
+      }
+    ]
+  },
+  {
+    "title": "2016 Pennsylvania Republican Presidential Primary",
+    "slug": "2016-pennsylvania-republican-presidential-primary",
+    "topic": "2016-president-gop-primary",
+    "state": "PA",
+    "short_title": "2016 PA GOP Presidential Primary",
+    "election_date": "2016-04-26",
+    "poll_count": 16,
+    "last_updated": "2016-03-28T16:07:19.000Z",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-pennsylvania-republican-presidential-primary",
+    "estimates": [
+      {
+        "choice": "Trump",
+        "value": 34.3,
+        "lead_confidence": null,
+        "first_name": "Donald",
+        "last_name": "Trump",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Cruz",
+        "value": 18.3,
+        "lead_confidence": null,
+        "first_name": "Ted",
+        "last_name": "Cruz",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Rubio",
+        "value": 16.4,
+        "lead_confidence": null,
+        "first_name": "Marco",
+        "last_name": "Rubio",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Kasich",
+        "value": 10.9,
+        "lead_confidence": null,
+        "first_name": "John",
+        "last_name": "Kasich",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Carson",
+        "value": 6.5,
+        "lead_confidence": null,
+        "first_name": "Ben",
+        "last_name": "Carson",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Bush",
+        "value": 4.1,
+        "lead_confidence": null,
+        "first_name": "Jeb",
+        "last_name": "Bush",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Undecided",
+        "value": 16.9,
+        "lead_confidence": null,
+        "first_name": null,
+        "last_name": null,
+        "party": null,
+        "incumbent": null
+      }
+    ]
+  },
+  {
+    "title": "2016 New Jersey Republican Presidential Primary",
+    "slug": "2016-new-jersey-republican-presidential-primary",
+    "topic": "2016-president-gop-primary",
+    "state": "NJ",
+    "short_title": "NJ Republican Primary ",
+    "election_date": "2016-06-07",
+    "poll_count": 10,
+    "last_updated": "2016-02-23T18:06:19.000Z",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-new-jersey-republican-presidential-primary",
+    "estimates": [
+      {
+        "choice": "Trump",
+        "value": 38.0,
+        "lead_confidence": null,
+        "first_name": "Donald",
+        "last_name": "Trump",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Rubio",
+        "value": 11.3,
+        "lead_confidence": null,
+        "first_name": "Marco",
+        "last_name": "Rubio",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Cruz",
+        "value": 10.1,
+        "lead_confidence": null,
+        "first_name": "Ted",
+        "last_name": "Cruz",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Kasich",
+        "value": 8.0,
+        "lead_confidence": null,
+        "first_name": "John",
+        "last_name": "Kasich",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Christie",
+        "value": 7.8,
+        "lead_confidence": null,
+        "first_name": "Chris",
+        "last_name": "Christie",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Bush",
+        "value": 6.8,
+        "lead_confidence": null,
+        "first_name": "Jeb",
+        "last_name": "Bush",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Carson",
+        "value": 5.0,
+        "lead_confidence": null,
+        "first_name": "Ben",
+        "last_name": "Carson",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Fiorina",
+        "value": 2.0,
+        "lead_confidence": null,
+        "first_name": "Carly",
+        "last_name": "Fiorina",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Paul",
+        "value": 1.5,
+        "lead_confidence": null,
+        "first_name": "Rand",
+        "last_name": "Paul",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Huckabee",
+        "value": 1.0,
+        "lead_confidence": null,
+        "first_name": "Mike",
+        "last_name": "Huckabee",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Santorum",
+        "value": 1.0,
+        "lead_confidence": null,
+        "first_name": "Rick",
+        "last_name": "Santorum",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Undecided",
+        "value": 11.4,
+        "lead_confidence": null,
+        "first_name": null,
+        "last_name": null,
+        "party": null,
+        "incumbent": null
+      },
+      {
+        "choice": "Other",
+        "value": 1.9,
+        "lead_confidence": null,
+        "first_name": null,
+        "last_name": null,
+        "party": null,
+        "incumbent": null
+      }
+    ]
+  },
+  {
+    "title": "2016 Georgia Republican Presidential Primary",
+    "slug": "2016-georgia-republican-presidential-primary",
+    "topic": "2016-president-gop-primary",
+    "state": "GA",
+    "short_title": "GA Republican Presidential Primary",
+    "election_date": "2016-03-01",
+    "poll_count": 23,
+    "last_updated": "2016-03-01T05:38:07.000Z",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-georgia-republican-presidential-primary",
+    "estimates": [
+      {
+        "choice": "Trump",
+        "value": 37.4,
+        "lead_confidence": null,
+        "first_name": "Donald",
+        "last_name": "Trump",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Rubio",
+        "value": 21.9,
+        "lead_confidence": null,
+        "first_name": "Marco",
+        "last_name": "Rubio",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Cruz",
+        "value": 19.2,
+        "lead_confidence": null,
+        "first_name": "Ted",
+        "last_name": "Cruz",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Kasich",
+        "value": 8.1,
+        "lead_confidence": null,
+        "first_name": "John",
+        "last_name": "Kasich",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Carson",
+        "value": 7.9,
+        "lead_confidence": null,
+        "first_name": "Ben",
+        "last_name": "Carson",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Undecided",
+        "value": 6.0,
+        "lead_confidence": null,
+        "first_name": null,
+        "last_name": null,
+        "party": null,
+        "incumbent": null
+      }
+    ]
+  },
+  {
+    "title": "2016 Colorado Republican Presidential Caucus",
+    "slug": "2016-colorado-republican-presidential-caucus",
+    "topic": "2016-president-gop-primary",
+    "state": "CO",
+    "short_title": "CO Republican Presidential Caucus",
+    "election_date": "2016-03-01",
+    "poll_count": 5,
+    "last_updated": "2015-11-18T14:58:55.000Z",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-colorado-republican-presidential-caucus",
+    "estimates": [
+      {
+        "choice": "Carson",
+        "value": 25.0,
+        "lead_confidence": null,
+        "first_name": "Ben",
+        "last_name": "Carson",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Rubio",
+        "value": 19.0,
+        "lead_confidence": null,
+        "first_name": "Marco",
+        "last_name": "Rubio",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Trump",
+        "value": 17.0,
+        "lead_confidence": null,
+        "first_name": "Donald",
+        "last_name": "Trump",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Cruz",
+        "value": 14.0,
+        "lead_confidence": null,
+        "first_name": "Ted",
+        "last_name": "Cruz",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Walker",
+        "value": 8.0,
+        "lead_confidence": null,
+        "first_name": "Scott",
+        "last_name": "Walker",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Fiorina",
+        "value": 5.0,
+        "lead_confidence": null,
+        "first_name": "Carly",
+        "last_name": "Fiorina",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Perry",
+        "value": 5.0,
+        "lead_confidence": null,
+        "first_name": "Rick",
+        "last_name": "Perry",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Paul",
+        "value": 3.0,
+        "lead_confidence": null,
+        "first_name": "Rand",
+        "last_name": "Paul",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Bush",
+        "value": 2.0,
+        "lead_confidence": null,
+        "first_name": "Jeb",
+        "last_name": "Bush",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Christie",
+        "value": 1.0,
+        "lead_confidence": null,
+        "first_name": "Chris",
+        "last_name": "Christie",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Huckabee",
+        "value": 1.0,
+        "lead_confidence": null,
+        "first_name": "Mike",
+        "last_name": "Huckabee",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Jindal",
+        "value": 1.0,
+        "lead_confidence": null,
+        "first_name": "Bobby",
+        "last_name": "Jindal",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Kasich",
+        "value": 1.0,
+        "lead_confidence": null,
+        "first_name": "John",
+        "last_name": "Kasich",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Undecided",
+        "value": 11.0,
+        "lead_confidence": null,
+        "first_name": null,
+        "last_name": null,
+        "party": null,
+        "incumbent": null
+      },
+      {
+        "choice": "Other",
+        "value": 2.0,
+        "lead_confidence": null,
+        "first_name": null,
+        "last_name": null,
+        "party": null,
+        "incumbent": null
+      }
+    ]
+  },
+  {
+    "title": "2016 Nevada Republican Presidential Caucus",
+    "slug": "2016-nevada-republican-presidential-caucus",
+    "topic": "2016-president-gop-primary",
+    "state": "NV",
+    "short_title": "NV Republican Presidential Caucus",
+    "election_date": "2016-02-23",
+    "poll_count": 8,
+    "last_updated": "2016-02-18T18:08:32.000Z",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-nevada-republican-presidential-caucus",
+    "estimates": [
+      {
+        "choice": "Trump",
+        "value": 42.0,
+        "lead_confidence": null,
+        "first_name": "Donald",
+        "last_name": "Trump",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Cruz",
+        "value": 20.7,
+        "lead_confidence": null,
+        "first_name": "Ted",
+        "last_name": "Cruz",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Rubio",
+        "value": 18.7,
+        "lead_confidence": null,
+        "first_name": "Marco",
+        "last_name": "Rubio",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Kasich",
+        "value": 7.0,
+        "lead_confidence": null,
+        "first_name": "John",
+        "last_name": "Kasich",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Carson",
+        "value": 6.0,
+        "lead_confidence": null,
+        "first_name": "Ben",
+        "last_name": "Carson",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Bush",
+        "value": 4.9,
+        "lead_confidence": null,
+        "first_name": "Jeb",
+        "last_name": "Bush",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Christie",
+        "value": 4.5,
+        "lead_confidence": null,
+        "first_name": "Chris",
+        "last_name": "Christie",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Fiorina",
+        "value": 2.0,
+        "lead_confidence": null,
+        "first_name": "Carly",
+        "last_name": "Fiorina",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Paul",
+        "value": 1.1,
+        "lead_confidence": null,
+        "first_name": "Rand",
+        "last_name": "Paul",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Santorum",
+        "value": 0.9,
+        "lead_confidence": null,
+        "first_name": "Rick",
+        "last_name": "Santorum",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Huckabee",
+        "value": 0.8,
+        "lead_confidence": null,
+        "first_name": "Mike",
+        "last_name": "Huckabee",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Undecided",
+        "value": 12.2,
+        "lead_confidence": null,
+        "first_name": null,
+        "last_name": null,
+        "party": null,
+        "incumbent": null
+      }
+    ]
+  },
+  {
+    "title": "2016 Alabama Republican Presidential Primary",
+    "slug": "2016-alabama-republican-presidential-primary",
+    "topic": "2016-president-gop-primary",
+    "state": "AL",
+    "short_title": "AL Republican Presidential Primary",
+    "election_date": "2016-03-01",
+    "poll_count": 8,
+    "last_updated": "2016-03-01T05:05:46.000Z",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-alabama-republican-presidential-primary",
+    "estimates": [
+      {
+        "choice": "Trump",
+        "value": 45.3,
+        "lead_confidence": null,
+        "first_name": "Donald",
+        "last_name": "Trump",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Cruz",
+        "value": 17.8,
+        "lead_confidence": null,
+        "first_name": "Ted",
+        "last_name": "Cruz",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Rubio",
+        "value": 16.6,
+        "lead_confidence": null,
+        "first_name": "Marco",
+        "last_name": "Rubio",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Carson",
+        "value": 9.5,
+        "lead_confidence": null,
+        "first_name": "Ben",
+        "last_name": "Carson",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Kasich",
+        "value": 3.0,
+        "lead_confidence": null,
+        "first_name": "John",
+        "last_name": "Kasich",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Undecided",
+        "value": 6.1,
+        "lead_confidence": null,
+        "first_name": null,
+        "last_name": null,
+        "party": null,
+        "incumbent": null
+      }
+    ]
+  },
+  {
+    "title": "2016 Arkansas Republican Presidential Primary",
+    "slug": "2016-arkansas-republican-presidential-primary",
+    "topic": "2016-president-gop-primary",
+    "state": "AR",
+    "short_title": "AR Republican Presidential Primary",
+    "election_date": "2016-03-01",
+    "poll_count": 5,
+    "last_updated": "2016-03-01T05:33:50.000Z",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-arkansas-republican-presidential-primary",
+    "estimates": [
+      {
+        "choice": "Trump",
+        "value": 34.0,
+        "lead_confidence": null,
+        "first_name": "Donald",
+        "last_name": "Trump",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Cruz",
+        "value": 27.0,
+        "lead_confidence": null,
+        "first_name": "Ted",
+        "last_name": "Cruz",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Huckabee",
+        "value": 21.0,
+        "lead_confidence": null,
+        "first_name": "Mike",
+        "last_name": "Huckabee",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Rubio",
+        "value": 20.0,
+        "lead_confidence": null,
+        "first_name": "Marco",
+        "last_name": "Rubio",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Carson",
+        "value": 8.0,
+        "lead_confidence": null,
+        "first_name": "Ben",
+        "last_name": "Carson",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Fiorina",
+        "value": 4.0,
+        "lead_confidence": null,
+        "first_name": "Carly",
+        "last_name": "Fiorina",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Kasich",
+        "value": 4.0,
+        "lead_confidence": null,
+        "first_name": "John",
+        "last_name": "Kasich",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Paul",
+        "value": 4.0,
+        "lead_confidence": null,
+        "first_name": "Rand",
+        "last_name": "Paul",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Walker",
+        "value": 4.0,
+        "lead_confidence": null,
+        "first_name": "Scott",
+        "last_name": "Walker",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Perry",
+        "value": 2.0,
+        "lead_confidence": null,
+        "first_name": "Rick",
+        "last_name": "Perry",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Bush",
+        "value": 1.0,
+        "lead_confidence": null,
+        "first_name": "Jeb",
+        "last_name": "Bush",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Christie",
+        "value": 1.0,
+        "lead_confidence": null,
+        "first_name": "Chris",
+        "last_name": "Christie",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Graham",
+        "value": 1.0,
+        "lead_confidence": null,
+        "first_name": "Lindsey",
+        "last_name": "Graham",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Jindal",
+        "value": 1.0,
+        "lead_confidence": null,
+        "first_name": "Bobby",
+        "last_name": "Jindal",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Santorum",
+        "value": 1.0,
+        "lead_confidence": null,
+        "first_name": "Rick",
+        "last_name": "Santorum",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Undecided",
+        "value": 6.0,
+        "lead_confidence": null,
+        "first_name": null,
+        "last_name": null,
+        "party": null,
+        "incumbent": null
+      },
+      {
+        "choice": "Other",
+        "value": 2.0,
+        "lead_confidence": null,
+        "first_name": null,
+        "last_name": null,
+        "party": null,
+        "incumbent": null
+      }
+    ]
+  },
+  {
+    "title": "2016 Massachusetts Republican Presidential Primary",
+    "slug": "2016-massachusetts-republican-presidential-primary",
+    "topic": "2016-president-gop-primary",
+    "state": "MA",
+    "short_title": "MA Republican Presidential Primary",
+    "election_date": "2016-03-01",
+    "poll_count": 9,
+    "last_updated": "2016-03-01T00:06:02.000Z",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-massachusetts-republican-presidential-primary",
+    "estimates": [
+      {
+        "choice": "Trump",
+        "value": 50.3,
+        "lead_confidence": null,
+        "first_name": "Donald",
+        "last_name": "Trump",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Rubio",
+        "value": 20.0,
+        "lead_confidence": null,
+        "first_name": "Marco",
+        "last_name": "Rubio",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Kasich",
+        "value": 14.1,
+        "lead_confidence": null,
+        "first_name": "John",
+        "last_name": "Kasich",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Cruz",
+        "value": 10.0,
+        "lead_confidence": null,
+        "first_name": "Ted",
+        "last_name": "Cruz",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Carson",
+        "value": 1.3,
+        "lead_confidence": null,
+        "first_name": "Ben",
+        "last_name": "Carson",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Undecided",
+        "value": 1.0,
+        "lead_confidence": null,
+        "first_name": null,
+        "last_name": null,
+        "party": null,
+        "incumbent": null
+      },
+      {
+        "choice": "Other",
+        "value": 2.0,
+        "lead_confidence": null,
+        "first_name": null,
+        "last_name": null,
+        "party": null,
+        "incumbent": null
+      }
+    ]
+  },
+  {
+    "title": "2016 Minnesota Republican Presidential Caucus",
+    "slug": "2016-minnesota-republican-presidential-caucus",
+    "topic": "2016-president-gop-primary",
+    "state": "MN",
+    "short_title": "MN Republican Presidential Caucus",
+    "election_date": "2016-03-01",
+    "poll_count": 2,
+    "last_updated": "2016-01-24T17:22:34.000Z",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-minnesota-republican-presidential-caucus",
+    "estimates": []
+  },
+  {
+    "title": "2016 Oklahoma Republican Presidential Primary",
+    "slug": "2016-oklahoma-republican-presidential-primary",
+    "topic": "2016-president-gop-primary",
+    "state": "OK",
+    "short_title": "OK Republican Presidential Primary",
+    "election_date": "2016-03-01",
+    "poll_count": 9,
+    "last_updated": "2016-03-01T14:10:22.000Z",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-oklahoma-republican-presidential-primary",
+    "estimates": [
+      {
+        "choice": "Trump",
+        "value": 34.7,
+        "lead_confidence": null,
+        "first_name": "Donald",
+        "last_name": "Trump",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Rubio",
+        "value": 21.4,
+        "lead_confidence": null,
+        "first_name": "Marco",
+        "last_name": "Rubio",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Cruz",
+        "value": 18.6,
+        "lead_confidence": null,
+        "first_name": "Ted",
+        "last_name": "Cruz",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Carson",
+        "value": 9.1,
+        "lead_confidence": null,
+        "first_name": "Ben",
+        "last_name": "Carson",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Kasich",
+        "value": 7.6,
+        "lead_confidence": null,
+        "first_name": "John",
+        "last_name": "Kasich",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Undecided",
+        "value": 9.1,
+        "lead_confidence": null,
+        "first_name": null,
+        "last_name": null,
+        "party": null,
+        "incumbent": null
+      },
+      {
+        "choice": "Other",
+        "value": 1.0,
+        "lead_confidence": null,
+        "first_name": null,
+        "last_name": null,
+        "party": null,
+        "incumbent": null
+      }
+    ]
+  },
+  {
+    "title": "2016 Tennessee Republican Presidential Primary",
+    "slug": "2016-tennessee-republican-presidential-primary",
+    "topic": "2016-president-gop-primary",
+    "state": "TN",
+    "short_title": "TN Republican Presidential Primary",
+    "election_date": "2016-03-01",
+    "poll_count": 4,
+    "last_updated": "2016-03-01T05:50:43.000Z",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-tennessee-republican-presidential-primary",
+    "estimates": []
+  },
+  {
+    "title": "2016 Virginia Republican Presidential Primary",
+    "slug": "2016-virginia-republican-presidential-primary",
+    "topic": "2016-president-gop-primary",
+    "state": "VA",
+    "short_title": "VA Republican Presidential Primary",
+    "election_date": "2016-03-01",
+    "poll_count": 14,
+    "last_updated": "2016-03-01T05:56:53.000Z",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-virginia-republican-presidential-primary",
+    "estimates": [
+      {
+        "choice": "Trump",
+        "value": 39.1,
+        "lead_confidence": null,
+        "first_name": "Donald",
+        "last_name": "Trump",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Rubio",
+        "value": 25.3,
+        "lead_confidence": null,
+        "first_name": "Marco",
+        "last_name": "Rubio",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Cruz",
+        "value": 15.5,
+        "lead_confidence": null,
+        "first_name": "Ted",
+        "last_name": "Cruz",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Kasich",
+        "value": 7.3,
+        "lead_confidence": null,
+        "first_name": "John",
+        "last_name": "Kasich",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Carson",
+        "value": 6.4,
+        "lead_confidence": null,
+        "first_name": "Ben",
+        "last_name": "Carson",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Bush",
+        "value": 2.4,
+        "lead_confidence": null,
+        "first_name": "Jeb",
+        "last_name": "Bush",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Undecided",
+        "value": 4.8,
+        "lead_confidence": null,
+        "first_name": null,
+        "last_name": null,
+        "party": null,
+        "incumbent": null
+      }
+    ]
+  },
+  {
+    "title": "2016 Kansas Republican Presidential Caucus",
+    "slug": "2016-kansas-republican-presidential-caucus",
+    "topic": "2016-president-gop-primary",
+    "state": "KS",
+    "short_title": "KS Republican Presidential Caucus",
+    "election_date": "2016-03-05",
+    "poll_count": 4,
+    "last_updated": "2016-03-04T19:12:42.000Z",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-kansas-republican-presidential-caucus",
+    "estimates": []
+  },
+  {
+    "title": "2016 Maine Republican Presidential Caucus",
+    "slug": "2016-maine-republican-presidential-caucus",
+    "topic": "2016-president-gop-primary",
+    "state": "ME",
+    "short_title": "ME Republican Presidential Caucus",
+    "election_date": "2016-03-05",
+    "poll_count": 1,
+    "last_updated": "2013-11-14T18:01:28.000Z",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-maine-republican-presidential-caucus",
+    "estimates": []
+  },
+  {
+    "title": "2016 Nebraska Republican Presidential Primary",
+    "slug": "2016-nebraska-republican-presidential-primary",
+    "topic": "2016-president-gop-primary",
+    "state": "NE",
+    "short_title": "NE Republican Presidential Primary",
+    "election_date": "2016-05-10",
+    "poll_count": 1,
+    "last_updated": "2014-02-07T18:56:51.000Z",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-nebraska-republican-presidential-primary",
+    "estimates": []
+  },
+  {
+    "title": "2016 Michigan Republican Presidential Primary",
+    "slug": "2016-michigan-presidential-republican-primary",
+    "topic": "2016-president-gop-primary",
+    "state": "MI",
+    "short_title": "MI Republican Presidential Primary",
+    "election_date": "2016-03-08",
+    "poll_count": 28,
+    "last_updated": "2016-03-07T22:35:15.000Z",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-michigan-presidential-republican-primary",
+    "estimates": [
+      {
+        "choice": "Trump",
+        "value": 38.8,
+        "lead_confidence": null,
+        "first_name": "Donald",
+        "last_name": "Trump",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Cruz",
+        "value": 21.4,
+        "lead_confidence": null,
+        "first_name": "Ted",
+        "last_name": "Cruz",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Kasich",
+        "value": 18.5,
+        "lead_confidence": null,
+        "first_name": "John",
+        "last_name": "Kasich",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Rubio",
+        "value": 14.1,
+        "lead_confidence": null,
+        "first_name": "Marco",
+        "last_name": "Rubio",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Carson",
+        "value": 4.7,
+        "lead_confidence": null,
+        "first_name": "Ben",
+        "last_name": "Carson",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Other",
+        "value": 1.0,
+        "lead_confidence": null,
+        "first_name": null,
+        "last_name": null,
+        "party": null,
+        "incumbent": null
+      }
+    ]
+  },
+  {
+    "title": "2016 Mississippi Republican Presidential Primary",
+    "slug": "2016-mississippi-presidential-republican-primary",
+    "topic": "2016-president-gop-primary",
+    "state": "MS",
+    "short_title": "MS Republican Presidential Primary",
+    "election_date": "2016-03-08",
+    "poll_count": 3,
+    "last_updated": "2016-03-03T03:37:13.000Z",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-mississippi-presidential-republican-primary",
+    "estimates": []
+  },
+  {
+    "title": "2016 Illinois Republican Presidential Primary",
+    "slug": "2016-illinois-presidential-republican-primary",
+    "topic": "2016-president-gop-primary",
+    "state": "IL",
+    "short_title": "IL Republican Presidential Primary",
+    "election_date": "2016-03-15",
+    "poll_count": 9,
+    "last_updated": "2016-03-13T16:33:35.000Z",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-illinois-presidential-republican-primary",
+    "estimates": [
+      {
+        "choice": "Trump",
+        "value": 36.4,
+        "lead_confidence": null,
+        "first_name": "Donald",
+        "last_name": "Trump",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Cruz",
+        "value": 25.4,
+        "lead_confidence": null,
+        "first_name": "Ted",
+        "last_name": "Cruz",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Kasich",
+        "value": 19.4,
+        "lead_confidence": null,
+        "first_name": "John",
+        "last_name": "Kasich",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Rubio",
+        "value": 12.7,
+        "lead_confidence": null,
+        "first_name": "Marco",
+        "last_name": "Rubio",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Undecided",
+        "value": 3.0,
+        "lead_confidence": null,
+        "first_name": null,
+        "last_name": null,
+        "party": null,
+        "incumbent": null
+      }
+    ]
+  },
+  {
+    "title": "2016 Missouri Republican Presidential Primary",
+    "slug": "2016-missouri-presidential-republican-primary",
+    "topic": "2016-president-gop-primary",
+    "state": "MO",
+    "short_title": "MO Republican Presidential Primary",
+    "election_date": "2016-03-15",
+    "poll_count": 2,
+    "last_updated": "2016-03-11T18:48:20.000Z",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-missouri-presidential-republican-primary",
+    "estimates": []
+  },
+  {
+    "title": "2016 Arizona Republican Presidential Primary",
+    "slug": "2016-arizona-presidential-republican-primary",
+    "topic": "2016-president-gop-primary",
+    "state": "AZ",
+    "short_title": "AZ Republican Presidential Primary",
+    "election_date": "2016-03-22",
+    "poll_count": 13,
+    "last_updated": "2016-03-21T18:52:18.000Z",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-arizona-presidential-republican-primary",
+    "estimates": [
+      {
+        "choice": "Trump",
+        "value": 36.6,
+        "lead_confidence": null,
+        "first_name": "Donald",
+        "last_name": "Trump",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Cruz",
+        "value": 20.2,
+        "lead_confidence": null,
+        "first_name": "Ted",
+        "last_name": "Cruz",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Kasich",
+        "value": 15.9,
+        "lead_confidence": null,
+        "first_name": "John",
+        "last_name": "Kasich",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Rubio",
+        "value": 12.6,
+        "lead_confidence": null,
+        "first_name": "Marco",
+        "last_name": "Rubio",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Undecided",
+        "value": 14.5,
+        "lead_confidence": null,
+        "first_name": null,
+        "last_name": null,
+        "party": null,
+        "incumbent": null
+      }
+    ]
+  },
+  {
+    "title": "2016 Alaska Republican Presidential Caucus",
+    "slug": "2016-alaska-presidential-republican-caucus",
+    "topic": "2016-president-gop-primary",
+    "state": "AK",
+    "short_title": "AK Republican Presidential Caucus",
+    "election_date": "2016-03-01",
+    "poll_count": 6,
+    "last_updated": "2016-01-28T21:55:36.000Z",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-alaska-presidential-republican-caucus",
+    "estimates": [
+      {
+        "choice": "Trump",
+        "value": 28.0,
+        "lead_confidence": null,
+        "first_name": "Donald",
+        "last_name": "Trump",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Cruz",
+        "value": 24.0,
+        "lead_confidence": null,
+        "first_name": "Ted",
+        "last_name": "Cruz",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Huckabee",
+        "value": 14.0,
+        "lead_confidence": null,
+        "first_name": "Mike",
+        "last_name": "Huckabee",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Palin",
+        "value": 11.0,
+        "lead_confidence": null,
+        "first_name": "Sarah",
+        "last_name": "Palin",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Carson",
+        "value": 9.0,
+        "lead_confidence": null,
+        "first_name": "Ben",
+        "last_name": "Carson",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Bush",
+        "value": 7.0,
+        "lead_confidence": null,
+        "first_name": "Jeb",
+        "last_name": "Bush",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Rubio",
+        "value": 7.0,
+        "lead_confidence": null,
+        "first_name": "Marco",
+        "last_name": "Rubio",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Walker",
+        "value": 7.0,
+        "lead_confidence": null,
+        "first_name": "Scott",
+        "last_name": "Walker",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Ryan",
+        "value": 6.0,
+        "lead_confidence": null,
+        "first_name": "Paul",
+        "last_name": "Ryan",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Christie",
+        "value": 3.0,
+        "lead_confidence": null,
+        "first_name": "Chris",
+        "last_name": "Christie",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Paul",
+        "value": 3.0,
+        "lead_confidence": null,
+        "first_name": "Rand",
+        "last_name": "Paul",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Kasich",
+        "value": 2.0,
+        "lead_confidence": null,
+        "first_name": "John",
+        "last_name": "Kasich",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Undecided",
+        "value": 13.0,
+        "lead_confidence": null,
+        "first_name": null,
+        "last_name": null,
+        "party": null,
+        "incumbent": null
+      },
+      {
+        "choice": "Other",
+        "value": 4.0,
+        "lead_confidence": null,
+        "first_name": null,
+        "last_name": null,
+        "party": null,
+        "incumbent": null
+      }
+    ]
+  },
+  {
+    "title": "2016 Washington Republican Presidential Primary",
+    "slug": "2016-washington-presidential-republican-primary",
+    "topic": "2016-president-gop-primary",
+    "state": "WA",
+    "short_title": "WA Republican Presidential Primary",
+    "election_date": "2016-05-24",
+    "poll_count": 2,
+    "last_updated": "2015-05-26T20:55:32.000Z",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-washington-presidential-republican-primary",
+    "estimates": []
+  },
+  {
+    "title": "2016 Wisconsin Republican Presidential Primary",
+    "slug": "2016-wisconsin-presidential-republican-primary",
+    "topic": "2016-president-gop-primary",
+    "state": "WI",
+    "short_title": "WI Republican Presidential Primary",
+    "election_date": "2016-04-05",
+    "poll_count": 20,
+    "last_updated": "2016-04-01T01:27:26.000Z",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-wisconsin-presidential-republican-primary",
+    "estimates": [
+      {
+        "choice": "Cruz",
+        "value": 39.0,
+        "lead_confidence": null,
+        "first_name": "Ted",
+        "last_name": "Cruz",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Trump",
+        "value": 32.5,
+        "lead_confidence": null,
+        "first_name": "Donald",
+        "last_name": "Trump",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Kasich",
+        "value": 20.7,
+        "lead_confidence": null,
+        "first_name": "John",
+        "last_name": "Kasich",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Undecided",
+        "value": 9.1,
+        "lead_confidence": null,
+        "first_name": null,
+        "last_name": null,
+        "party": null,
+        "incumbent": null
+      },
+      {
+        "choice": "Other",
+        "value": 1.0,
+        "lead_confidence": null,
+        "first_name": null,
+        "last_name": null,
+        "party": null,
+        "incumbent": null
+      }
+    ]
+  },
+  {
+    "title": "2016 New York Republican Presidential Primary",
+    "slug": "2016-new-york-presidential-republican-primary",
+    "topic": "2016-president-gop-primary",
+    "state": "NY",
+    "short_title": "NY Republican Presidential Primary",
+    "election_date": "2016-04-19",
+    "poll_count": 9,
+    "last_updated": "2016-03-31T15:27:28.000Z",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-new-york-presidential-republican-primary",
+    "estimates": [
+      {
+        "choice": "Trump",
+        "value": 56.0,
+        "lead_confidence": null,
+        "first_name": "Donald",
+        "last_name": "Trump",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Kasich",
+        "value": 19.0,
+        "lead_confidence": null,
+        "first_name": "John",
+        "last_name": "Kasich",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Rubio",
+        "value": 17.9,
+        "lead_confidence": null,
+        "first_name": "Marco",
+        "last_name": "Rubio",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Cruz",
+        "value": 15.4,
+        "lead_confidence": null,
+        "first_name": "Ted",
+        "last_name": "Cruz",
+        "party": "Rep",
+        "incumbent": false
+      },
+      {
+        "choice": "Undecided",
+        "value": 4.4,
+        "lead_confidence": null,
+        "first_name": null,
+        "last_name": null,
+        "party": null,
+        "incumbent": null
+      },
+      {
+        "choice": "Other",
+        "value": 10.8,
+        "lead_confidence": null,
+        "first_name": null,
+        "last_name": null,
+        "party": null,
+        "incumbent": null
+      }
+    ]
+  },
+  {
+    "title": "2016 Connecticut Republican Presidential Primary",
+    "slug": "2016-connecticut-presidential-republican-primary",
+    "topic": "2016-president-gop-primary",
+    "state": "CT",
+    "short_title": "CT Republican Presidential Primary",
+    "election_date": "2016-04-26",
+    "poll_count": 3,
+    "last_updated": "2015-11-18T16:11:17.000Z",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-connecticut-presidential-republican-primary",
+    "estimates": []
+  },
+  {
+    "title": "2016 Maryland Republican Presidential Primary",
+    "slug": "2016-maryland-presidential-republican-primary",
+    "topic": "2016-president-gop-primary",
+    "state": "MD",
+    "short_title": "MD Republican Presidential Primary",
+    "election_date": "2016-04-26",
+    "poll_count": 2,
+    "last_updated": "2016-03-21T18:12:19.000Z",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-maryland-presidential-republican-primary",
+    "estimates": []
+  },
+  {
+    "title": "2016 Indiana Republican Presidential Primary",
+    "slug": "2016-indiana-presidential-republican-primary",
+    "topic": "2016-president-gop-primary",
+    "state": "IN",
+    "short_title": "IN Republican Presidential Primary",
+    "election_date": "2016-05-03",
+    "poll_count": 1,
+    "last_updated": "2015-12-11T22:56:09.000Z",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-indiana-presidential-republican-primary",
+    "estimates": []
+  },
+  {
+    "title": "2016 West Virginia Republican Presidential Primary",
+    "slug": "2016-west-virginia-presidential-republican-primary",
+    "topic": "2016-president-gop-primary",
+    "state": "WV",
+    "short_title": "WV Republican Presidential Primary",
+    "election_date": "2016-05-10",
+    "poll_count": 2,
+    "last_updated": "2016-02-22T17:44:39.000Z",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-west-virginia-presidential-republican-primary",
+    "estimates": []
+  },
+  {
+    "title": "2016 Montana Republican Presidential Primary",
+    "slug": "2016-montana-republican-presidential-primary",
+    "topic": "2016-president-gop-primary",
+    "state": "MT",
+    "short_title": "MT Republican Presidential Primary",
+    "election_date": "2016-06-07",
+    "poll_count": 1,
+    "last_updated": "2015-03-25T22:16:26.000Z",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-montana-republican-presidential-primary",
+    "estimates": []
+  },
+  {
+    "title": "2016 Vermont Republican Presidential Primary",
+    "slug": "2016-vermont-republican-presidential-primary",
+    "topic": "2016-president-gop-primary",
+    "state": "VT",
+    "short_title": "VT Presidential Primary",
+    "election_date": "2016-03-01",
+    "poll_count": 1,
+    "last_updated": "2016-02-22T21:52:01.000Z",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-vermont-republican-presidential-primary",
+    "estimates": []
+  },
+  {
+    "title": "2016 New Mexico Republican Presidential Primary",
+    "slug": "2016-new-mexico-democratic-presidential-primary",
+    "topic": "2016-president-gop-primary",
+    "state": "NM",
+    "short_title": "NM Presidential Primary",
+    "election_date": "2016-06-07",
+    "poll_count": 1,
+    "last_updated": "2016-02-22T21:42:13.000Z",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-new-mexico-democratic-presidential-primary",
+    "estimates": []
+  },
+  {
+    "title": "2016 Rhode Island Republican Presidential Primary",
+    "slug": "2016-rhode-island-republican-presidential-primary",
+    "topic": "2016-president-gop-primary",
+    "state": "RI",
+    "short_title": "RI Republican Presidential Primary",
+    "election_date": "2016-04-26",
+    "poll_count": 2,
+    "last_updated": "2016-02-25T19:57:19.000Z",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-rhode-island-republican-presidential-primary",
+    "estimates": []
+  },
+  {
+    "title": "2016 Idaho Republican Presidential Primary",
+    "slug": "2016-idaho-republican-presidential-primary",
+    "topic": "2016-president-gop-primary",
+    "state": "ID",
+    "short_title": "ID Republican Presidential Primary",
+    "election_date": "2016-03-08",
+    "poll_count": 1,
+    "last_updated": "2016-03-07T17:45:02.000Z",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-idaho-republican-presidential-primary",
+    "estimates": []
+  }
+]
