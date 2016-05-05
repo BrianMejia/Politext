@@ -19,7 +19,7 @@ gop_choices = ['trump', 'cruz', 'kasich', 'rubio', 'huckabee', 'palin', 'carson'
 dem_choices = ["clinton", "sanders", "o'malley"]
 other_choices = ['undecided', 'other']
 
-@app.route("/", methods=['GET', 'POST'])
+@app.route("/sms", methods=['GET', 'POST'])
 def search_candidate():
 
     body = request.values.get('Body', None)
@@ -88,7 +88,7 @@ def search_candidate():
         resp.message("Error: Party or Choice is not in data.\n")
     return str(resp);
 
-@app.route("/main", methods=['GET', 'POST'])
+@app.route("/", methods=['GET', 'POST'])
 def show_page():
     return '<h1>This sends messages to phones. Text the # (862) 256-2358</h1>';
 
