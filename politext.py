@@ -19,6 +19,7 @@ other_choices = ['undecided', 'other']
 
 @app.route("/", methods=['GET', 'POST'])
 def search_candidate():
+
     body = request.values.get('Body', None)
     resp = twilio.twiml.Response()
 
@@ -27,10 +28,10 @@ def search_candidate():
         resp.message("Hello! I search for data on the 2016 US Presidential Primaries and Caucuses!\n" +
             "Please use this format to get a proper response: <gop/dem> <state> [candidate(s)].\n" +
             "Example: dem MI Sanders\nThank you!\n")
-        return str(resp)
+        return render_template('index.html');
     elif body.lower() == "!data":
         resp.message("All data is received from the HuffPost Pollster API.\nPython and Twilio were used to create this!\nCreated by Brian Mejia")
-        return str(resp)
+        return render_template('index.html');
     
     body = body.split()
     if len(body) >= 2:
@@ -40,7 +41,7 @@ def search_candidate():
         c = []
     else:
         resp.message("Error: Not enough parameters. Use <party> <state> [choice(s)].")
-        return str(resp)
+        return render_template('index.html');
     if len(body) >= 3:
         c = body[2:]
     elif len(body) == 2:
@@ -61,7 +62,7 @@ def search_candidate():
                 if not item['estimates']:
                     message_str = "Error: There are no estimates for the %s. Try another primary/caucus." %item['title']
                     resp.message(message_str)
-                    return str(resp)
+                    return render_template('index.html');
                 already_chosen = []
                 choice_scores = []
                 for estimate in item['estimates']:
@@ -79,11 +80,11 @@ def search_candidate():
                 else:
                     message_str = "Error: There are no estimates for candidates. Try again."
                 resp.message(message_str)
-                return str(resp)
+                return render_template('index.html');
         resp.message("Error: State is not in data.\n")
     else:
         resp.message("Error: Party or Choice is not in data.\n")
-    return str(resp)
+    return render_template('index.html');
 
 if __name__ == "__main__":
     app.run(debug=True)
