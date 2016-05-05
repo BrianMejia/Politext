@@ -19,7 +19,7 @@ gop_choices = ['trump', 'cruz', 'kasich', 'rubio', 'huckabee', 'palin', 'carson'
 dem_choices = ["clinton", "sanders", "o'malley"]
 other_choices = ['undecided', 'other']
 
-@app.route("/", methods=['GET', 'POST'])
+@app.route("/", methods=['GET'])
 def search_candidate():
 
     body = request.values.get('Body', None)
