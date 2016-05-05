@@ -1,6 +1,7 @@
 from flask import Flask, request, redirect
 import twilio.twiml, datetime, urllib, json
 
+
 # author : Brian Mejia
 app = Flask(__name__)
 
@@ -87,4 +88,5 @@ def search_candidate():
     return '<h1>This sends messages to phones. Text the # (862) 256-2358</h1>';
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port, debug=True)
