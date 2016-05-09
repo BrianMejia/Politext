@@ -1,9 +1,13 @@
 from flask import Flask, request, redirect
 import twilio.twiml, datetime, urllib, json
+<<<<<<< HEAD
 import os
 
 
 # author : Brian Mejia
+=======
+
+>>>>>>> 3616f8a0e26197aea7c16e4c6e762e0fe5fc9e67
 app = Flask(__name__)
 
 url_gop = "http://elections.huffingtonpost.com/pollster/api/charts.json?topic=2016-president-gop-primary"
@@ -19,9 +23,14 @@ gop_choices = ['trump', 'cruz', 'kasich', 'rubio', 'huckabee', 'palin', 'carson'
 dem_choices = ["clinton", "sanders", "o'malley"]
 other_choices = ['undecided', 'other']
 
+<<<<<<< HEAD
 @app.route("/sms", methods=['GET', 'POST'])
 def search_candidate():
 
+=======
+@app.route("/", methods=['GET', 'POST'])
+def search_candidate():
+>>>>>>> 3616f8a0e26197aea7c16e4c6e762e0fe5fc9e67
     body = request.values.get('Body', None)
     resp = twilio.twiml.Response()
 
@@ -30,10 +39,17 @@ def search_candidate():
         resp.message("Hello! I search for data on the 2016 US Presidential Primaries and Caucuses!\n" +
             "Please use this format to get a proper response: <gop/dem> <state> [candidate(s)].\n" +
             "Example: dem MI Sanders\nThank you!\n")
+<<<<<<< HEAD
         return str(resp);
     elif body.lower() == "!data":
         resp.message("All data is received from the HuffPost Pollster API.\nPython and Twilio were used to create this!\nCreated by Brian Mejia")
         return str(resp);
+=======
+        return str(resp)
+    elif body.lower() == "!data":
+        resp.message("All data is received from the HuffPost Pollster API.\nPython and Twilio were used to create this!\nCreated by Brian Mejia")
+        return str(resp)
+>>>>>>> 3616f8a0e26197aea7c16e4c6e762e0fe5fc9e67
     
     body = body.split()
     if len(body) >= 2:
@@ -43,7 +59,11 @@ def search_candidate():
         c = []
     else:
         resp.message("Error: Not enough parameters. Use <party> <state> [choice(s)].")
+<<<<<<< HEAD
         return str(resp);
+=======
+        return str(resp)
+>>>>>>> 3616f8a0e26197aea7c16e4c6e762e0fe5fc9e67
     if len(body) >= 3:
         c = body[2:]
     elif len(body) == 2:
@@ -64,7 +84,11 @@ def search_candidate():
                 if not item['estimates']:
                     message_str = "Error: There are no estimates for the %s. Try another primary/caucus." %item['title']
                     resp.message(message_str)
+<<<<<<< HEAD
                     return str(resp);
+=======
+                    return str(resp)
+>>>>>>> 3616f8a0e26197aea7c16e4c6e762e0fe5fc9e67
                 already_chosen = []
                 choice_scores = []
                 for estimate in item['estimates']:
@@ -82,6 +106,7 @@ def search_candidate():
                 else:
                     message_str = "Error: There are no estimates for candidates. Try again."
                 resp.message(message_str)
+<<<<<<< HEAD
                 return str(resp);
         resp.message("Error: State is not in data.\n")
     else:
@@ -95,3 +120,13 @@ def show_page():
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     app.run(host='0.0.0.0', port=port, debug=True)
+=======
+                return str(resp)
+        resp.message("Error: State is not in data.\n")
+    else:
+        resp.message("Error: Party or Choice is not in data.\n")
+    return str(resp)
+
+if __name__ == "__main__":
+    app.run(debug=True)
+>>>>>>> 3616f8a0e26197aea7c16e4c6e762e0fe5fc9e67
