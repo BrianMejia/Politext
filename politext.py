@@ -1,97 +1,176 @@
 from flask import Flask, request, redirect
-import twilio.twiml, datetime, urllib, json
+import twilio.twiml, datetime, json
+import jinja2
 import os
-
+import urllib.request as url
+import requests
 
 # author : Brian Mejia
 app = Flask(__name__)
 
-url_gop = "http://elections.huffingtonpost.com/pollster/api/charts.json?topic=2016-president-gop-primary"
-url_dem = "http://elections.huffingtonpost.com/pollster/api/charts.json?topic=2016-president-dem-primary"
+"""
+Potential responses:
+President NY
+Senate AK
+Favorable Rating Romney
+Job Approval MN
+EU Referendum
+Primary NV DEM
+"""
 
-gop_response = urllib.urlopen(url_gop)
-dem_response = urllib.urlopen(url_dem)
+topics = {"president": "2016-president", "senate": "2016-senate", "house": "2016-house", 
+			"favorable rating": "favorable-ratings", "job approval": "obama-job-approval"}
+states = ["AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DC", "DE", "FL", "GA", 
+          "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", 
+          "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", 
+          "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", 
+          "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY", "US"]
+obama_approval_sectors = {"independents": "-independents", "rep": "-republicans", 
+		"dem": "-democrats", "adults": "-adults", "foreign policy": "-foreign-policy", 
+		"health": "-health", "economy": "-economy"}
+favorable_rating_sectors = {"stein": "jill-stein", "johnson": "gary-johnson", "kaine": "tim-kaine",
+		"pence": "mike-pence", "o'malley": "martin-o-malley", "pataki": "george-pataki",
+		"graham": "lindsey-graham", "jindal": "bobby-jindal", "gilmore": "jim-gilmore",
+		"chafee": "lincoln-chafee", "fiorina": "carly-fiorina", "kasich": "john-kasich",
+		"trump": "donald-trump", "perry": "rick-perry", "sanders": "bernie-sanders",
+		"carson": "ben-carson", "warren": "elizabeth-warren", "huckabee": "mike-huckabee",
+		"walker": "scott-walker", "cruz": "ted-cruz", "cuomo": "andrew-cuomo",
+		"santorum": "rick-santorum", "bush": "jeb-bush", "paul": "rand-paul", "christie": "chris-christie",
+		"pelosi": "nancy-pelosi", "reid": "harry-reid", "mcconnell": "mitch-mcconnell", 
+		"boehner": "john-boehner", "rubio": "marco-rubio", "rep": "republican-party", "dem": "democratic-party",
+		"clinton": "hillary-clinton", "biden": "joe-biden", "ryan": "paul-ryan", 
+		"obama": "obama"}
 
-gop_data = json.loads(gop_response.read())
-dem_data = json.loads(dem_response.read())
+def build_criteria(msg):
+	msg_body = msg.lower().split()
+	sector = ''
+	potential_topics = [msg_body[0]]
+	if len(msg_body) > 1: 
+		potential_topics.append(msg_body[0] + " " + msg_body[1])
+	if potential_topics[0] in topics:
+		topic = topics[potential_topics[0]]
+		if len(msg_body) == 1:
+			state = 'US'
+		elif msg_body[1].upper() not in states:
+			return 'Error: State not recognized. Enter abbreviation or US.'
+		else:
+			state = msg_body[1].upper()
+	elif len(msg_body) > 1 and potential_topics[1] in topics:
+		topic = topics[potential_topics[1]]
+		if len(msg_body) == 2:
+			if topic == 'favorable-ratings':
+				return 'Error: No candidate selected. Please enter their last name.'
+			elif topic == 'eu-uk-referendum':
+				state = 'UK'
+			else:
+				state = 'US'
+		if topic == 'obama-job-approval' and len(msg_body) > 2:
+			criteria = msg.lower().split(' ', 2)[2]
+			if criteria.upper() in states:
+				state = criteria.upper()
+				sector = ''
+			elif criteria in obama_approval_sectors:
+				sector = 'obama-job-approval' + obama_approval_sectors[criteria]
+				state = 'US'
+			else:
+				return 'Error: Job Approval criteria not recognized.'
+		elif topic == 'favorable-ratings':
+			if msg_body[2] in favorable_rating_sectors:
+				sector = favorable_rating_sectors[msg_body[2]] + "-favorable-rating"
+				state = 'US'
+			else:
+				return 'Error: Candidate not recognized. Enter another candidate.'
+	else:
+		return "Error: Topic is not recognized."
 
-gop_choices = ['trump', 'cruz', 'kasich', 'rubio', 'huckabee', 'palin', 'carson', 'bush', 'walker', 'ryan', 'paul', 'perry', 'graham', 'jindal', 'santorum']
-dem_choices = ["clinton", "sanders", "o'malley"]
-other_choices = ['undecided', 'other']
+	chart_url = "http://elections.huffingtonpost.com/pollster/api/charts.json?topic=" + topic + "&state=" + state
+	polls_url = "http://elections.huffingtonpost.com/pollster/api/polls.json?topic=" + topic + "&state=" + state
 
-@app.route("/sms", methods=['GET', 'POST'])
-def search_candidate():
+	chart_response = url.urlopen(chart_url)
+	polls_response = url.urlopen(polls_url)
 
-    body = request.values.get('Body', None)
-    resp = twilio.twiml.Response()
+	chart_data = json.loads(chart_response.read().decode('utf-8'))
+	polls_data = json.loads(polls_response.read().decode('utf-8'))
 
-    data = None
-    if body.lower() == "!help":
-        resp.message("Hello! I search for data on the 2016 US Presidential Primaries and Caucuses!\n" +
-            "Please use this format to get a proper response: <gop/dem> <state> [candidate(s)].\n" +
-            "Example: dem MI Sanders\nThank you!\n")
-        return str(resp);
-    elif body.lower() == "!data":
-        resp.message("All data is received from the HuffPost Pollster API.\nPython and Twilio were used to create this!\nCreated by Brian Mejia")
-        return str(resp);
-    
-    body = body.split()
-    if len(body) >= 2:
-        party = body[0].lower()
-        state = body[1].upper()
-        choices = []
-        c = []
-    else:
-        resp.message("Error: Not enough parameters. Use <party> <state> [choice(s)].")
-        return str(resp);
-    if len(body) >= 3:
-        c = body[2:]
-    elif len(body) == 2:
-        choices = dem_choices if (party == "dem") else gop_choices
-        choices += other_choices
-        c = choices
-    choices = [choice.lower() for choice in c]
+	search_data = [chart_data, polls_data, state, sector]
 
-    print party, state, choices
+	return find_estimate(search_data, topic)
 
-    if party == "dem" and (any(choice.lower() in choices for dchoice in dem_choices) or any(c.lower() in choices for ochoice in other_choices)):
-        data = dem_data
-    elif party == "gop" and (any(choice.lower() in choices for gchoice in gop_choices) or any(c.lower() in choices for ochoice in other_choices)):
-        data = gop_data
-    if data is not None:
-        for item in data:
-            if state == item['state']:
-                if not item['estimates']:
-                    message_str = "Error: There are no estimates for the %s. Try another primary/caucus." %item['title']
-                    resp.message(message_str)
-                    return str(resp);
-                already_chosen = []
-                choice_scores = []
-                for estimate in item['estimates']:
-                    if (estimate['choice'].lower()) in choices and (estimate['choice'].lower()) not in already_chosen:
-                        already_chosen.append(estimate['choice'].lower())
-                        today = datetime.datetime.today().strftime('%Y-%m-%d')
-                        score = "%s: %.1f%%\n" %(estimate['choice'], estimate['value'])
-                        choice_scores.append(score)
-                if already_chosen:
-                    message_str = "%s\n" %item['title']
-                    for chosen in choice_scores:
-                        message_str += chosen
-                    if item['election_date'] > today:
-                        message_str += "NOTE: These numbers are poll numbers as the election hasn't started yet.\n"
-                else:
-                    message_str = "Error: There are no estimates for candidates. Try again."
-                resp.message(message_str)
-                return str(resp);
-        resp.message("Error: State is not in data.\n")
-    else:
-        resp.message("Error: Party or Choice is not in data.\n")
-    return str(resp);
+def find_estimate(search_data, topic):
+	selected_data = None
+	chart_data = search_data[0]
+	if topic == 'obama-job-approval' or topic == 'favorable-ratings':
+		for item in chart_data:
+			if item['slug'] == search_data[3] or (search_data[3] == '' and item['state'] == search_data[2]):
+				if len(item['estimates']) > 0:
+					selected_data = [item, 'chart']
+				else:
+					selected_data = find_descriptive_poll(search_data, topic)
+				break
+	elif len(chart_data) == 0 or len(chart_data[0]['estimates']) == 0:
+		selected_data = find_descriptive_poll(search_data, topic)
+	else:
+		selected_data = [chart_data[0], 'chart']
 
-@app.route("/", methods=['GET', 'POST'])
-def show_page():
-    return '<h1>This sends messages to phones. Text the # (862) 256-2358</h1>';
+	if selected_data[0] is None:
+		return "Error: There are no charts/data on this topic."
+		
+	return build_response(selected_data)
+
+
+def find_descriptive_poll(search_data, topic):
+	selected_poll = None
+	item_count = 0
+	poll_data = search_data[1]
+	state = search_data[2]
+	sector = search_data[3]
+	for item in poll_data:
+		for question in item['questions']:
+			if question['topic'] == topic and question['state'] == state:
+				for subpopulation in question['subpopulations']:
+					sub_len = len(subpopulation['responses'])
+					if sub_len > item_count:
+						item_count = sub_len
+						selected_poll = question
+						selected_poll['source'] = item['pollster']
+	return [selected_poll, 'poll']
+
+def build_response(estimate):
+	response = ""
+	data = estimate[0]
+	if estimate[1] == 'poll':
+		response += data['name'] + "\n\n"
+		response += str(data['subpopulations'][0]['observations']) + " " + \
+			data['subpopulations'][0]['name'] + ":" + "\n"
+		for choice in data['subpopulations'][0]['responses']:
+			response += choice['choice'] + ": " + "{:.3g}%".format(float(choice['value'])) + "\n"
+		response += "\nPoll Source: " + data['source']
+	elif estimate[1] == 'chart':
+		response += data['title'] + "\n\n"
+		response += "Based on " + str(data['poll_count']) + " Polls:" + "\n"
+		for choice in data['estimates']:
+			party = '(U) '
+			if (choice['party'] == 'Dem'):
+				party = '(D) '
+			elif (choice['party'] == 'Rep'):
+				party = '(R) '
+			response += party + choice['choice'] + ": " + "{:.3g}%".format(float(choice['value'])) + "\n"
+		gurl = goo_shorten_url(data['url'])
+		response += "\nSee the chart here: " + gurl
+	return response
+
+def goo_shorten_url(url):
+    post_url = 'https://www.googleapis.com/urlshortener/v1/url?key=AIzaSyCzJlU2BF46intOo179nMKstgemnbxBxsk'
+    params = json.dumps({'longUrl': url})
+    response = requests.post(post_url,params,headers={'Content-Type': 'application/json'})
+    return response.json()['id']
+
+@app.route('/')
+def show_homepage():
+ 	return app.send_static_file('index.html')
 
 if __name__ == "__main__":
+	#user_input = input("Enter search: ")
+	#print(build_criteria(user_input))
     port = int(os.environ.get("PORT", 5000))
     app.run(host='0.0.0.0', port=port, debug=True)
