@@ -6,6 +6,11 @@ options['dataMode'] = 'regions';
 options['colors'] = ["#0000ff", "#ff0000"];
 
 function drawChart() {
+
+  $.getJSON("test.json", function(json) {
+    var json_data = json; // this will show the info it in firebug console
+  });
+
   var data = google.visualization.arrayToDataTable([
     ['State', 	'Dem Vote (%)', 	'Rep Vote (%)'],
     ['NJ',					0.1,								0.9],

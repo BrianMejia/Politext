@@ -1,0 +1,11 @@
+{
+	"polls": [
+		{
+			id: 0,
+			"question": "Yes or No?",
+			states : [
+
+			]
+		}
+	]
+}

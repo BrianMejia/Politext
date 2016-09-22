@@ -1,4 +1,4 @@
-from flask import Flask, request, redirect
+from flask import Flask, request, redirect, url_for, send_from_directory
 import twilio.twiml, datetime, json
 import jinja2
 import os
@@ -6,7 +6,7 @@ import urllib.request as url
 import requests
 
 # author : Brian Mejia
-app = Flask(__name__)
+app = Flask(__name__, static_folder='./static')
 
 """
 Potential responses:
@@ -40,6 +40,15 @@ favorable_rating_sectors = {"stein": "jill-stein", "johnson": "gary-johnson", "k
 		"boehner": "john-boehner", "rubio": "marco-rubio", "rep": "republican-party", "dem": "democratic-party",
 		"clinton": "hillary-clinton", "biden": "joe-biden", "ryan": "paul-ryan", 
 		"obama": "obama"}
+
+def interpret_message(msg):
+	command = msg.lower().split()[0]
+	if command == '!help':
+		return 'help pls'
+	elif command == '!poll'
+		return poll_response(msg)
+	else:
+		return build_criteria(msg)
 
 def build_criteria(msg):
 	msg_body = msg.lower().split()
@@ -165,9 +174,27 @@ def goo_shorten_url(url):
     response = requests.post(post_url,params,headers={'Content-Type': 'application/json'})
     return response.json()['id']
 
+def poll_response(msg):
+	with open('custom_polls.json') as load_poll_data:
+		local_poll_data = json.load(load_poll_data)
+	if msg.strip().lower() == '!poll':
+		return 'Hey this is an introduction to the poll system. Check it out at the website!'
+	poll_response = msg.lower().split()
+	vote = poll_response[1]
+	state = poll_response[2]
+
+	if state not in local_poll_data[0]['states'] and state in states:
+		local_poll_data[0]['states'] 
+
+
 @app.route('/')
 def show_homepage():
  	return app.send_static_file('index.html')
+
+@app.route('/js/<path:filename>')
+def serve_js(filename):
+	root_dir = os.path.dirname(os.getcwd())
+	return send_from_directory(os.path.join('.', 'static', 'js'), filename)
 
 if __name__ == "__main__":
 	#user_input = input("Enter search: ")
