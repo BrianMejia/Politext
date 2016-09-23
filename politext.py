@@ -15,11 +15,11 @@ Senate AK
 Favorable Rating Romney
 Job Approval MN
 EU Referendum
-Primary NV DEM
 """
 
 topics = {"president": "2016-president", "senate": "2016-senate", "house": "2016-house", 
-			"favorable rating": "favorable-ratings", "job approval": "obama-job-approval"}
+			"favorable rating": "favorable-ratings", "job approval": "obama-job-approval",
+			"uk referendum": "uk-eu-referendum"};
 states = ["AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DC", "DE", "FL", "GA", 
           "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", 
           "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", 
@@ -51,7 +51,7 @@ def interpret_message(msg):
 		return build_criteria(msg)
 
 def poll_response(msg):
-	with open('custom_polls.json') as load_poll_data:
+	with open('static/json/custom_polls.json') as load_poll_data:
 		local_poll_data = json.load(load_poll_data)
 	if msg.strip().lower() == '!poll':
 		return 'Hey this is an introduction to the poll system. Check it out at the website!'
@@ -59,7 +59,7 @@ def poll_response(msg):
 	vote = poll_response[1]
 	state = poll_response[2].upper()
 
-	poll_shortcut = local_poll_data[0]['polls'][0]['states']
+	poll_shortcut = local_poll_data[0]['polls']['states']
 
 	if len(poll_shortcut) == 0 or (state not in poll_shortcut and state in states):
 		poll_shortcut[state] = {'yes_votes': 0, 'no_votes': 0, 'total_votes': 0}
@@ -71,7 +71,7 @@ def poll_response(msg):
 		poll_shortcut[state]['total_votes'] += 1
 	else:
 		return 'Error: Vote not recognized. Either enter yes or no.'
-	with open("custom_polls.json", "w") as outfile:
+	with open("static/json/custom_polls.json", "w") as outfile:
 		json.dump(local_poll_data, outfile, indent=3)
 	return 'Vote counted.'
 
@@ -95,8 +95,6 @@ def build_criteria(msg):
 		if len(msg_body) == 2:
 			if topic == 'favorable-ratings':
 				return 'Error: No candidate selected. Please enter their last name.'
-			elif topic == 'eu-uk-referendum':
-				state = 'UK'
 			else:
 				state = 'US'
 		if topic == 'obama-job-approval' and len(msg_body) > 2:
@@ -118,8 +116,12 @@ def build_criteria(msg):
 	else:
 		return "Error: Topic is not recognized."
 
-	chart_url = "http://elections.huffingtonpost.com/pollster/api/charts.json?topic=" + topic + "&state=" + state
-	polls_url = "http://elections.huffingtonpost.com/pollster/api/polls.json?topic=" + topic + "&state=" + state
+	chart_url = "http://elections.huffingtonpost.com/pollster/api/charts.json?topic=" + topic
+	polls_url = "http://elections.huffingtonpost.com/pollster/api/polls.json?topic=" + topic
+
+	if topic != 'uk-eu-referendum':
+		chart_url += "&state=" + state
+		polls_url += "&state=" + state
 
 	chart_response = url.urlopen(chart_url)
 	polls_response = url.urlopen(polls_url)
