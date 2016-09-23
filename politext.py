@@ -45,10 +45,36 @@ def interpret_message(msg):
 	command = msg.lower().split()[0]
 	if command == '!help':
 		return 'help pls'
-	elif command == '!poll'
+	elif command == '!poll':
 		return poll_response(msg)
 	else:
 		return build_criteria(msg)
+
+def poll_response(msg):
+	with open('custom_polls.json') as load_poll_data:
+		local_poll_data = json.load(load_poll_data)
+	if msg.strip().lower() == '!poll':
+		return 'Hey this is an introduction to the poll system. Check it out at the website!'
+	poll_response = msg.lower().split()
+	vote = poll_response[1]
+	state = poll_response[2].upper()
+
+	poll_shortcut = local_poll_data[0]['polls'][0]['states']
+
+	if len(poll_shortcut) == 0 or (state not in poll_shortcut and state in states):
+		poll_shortcut[state] = {'yes_votes': 0, 'no_votes': 0, 'total_votes': 0}
+	if vote == 'yes':
+		poll_shortcut[state]['yes_votes'] += 1
+		poll_shortcut[state]['total_votes'] += 1
+	elif vote == 'no':
+		poll_shortcut[state]['no_votes'] += 1
+		poll_shortcut[state]['total_votes'] += 1
+	else:
+		return 'Error: Vote not recognized. Either enter yes or no.'
+	with open("custom_polls.json", "w") as outfile:
+		json.dump(local_poll_data, outfile, indent=3)
+	return 'Vote counted.'
+
 
 def build_criteria(msg):
 	msg_body = msg.lower().split()
@@ -174,19 +200,6 @@ def goo_shorten_url(url):
     response = requests.post(post_url,params,headers={'Content-Type': 'application/json'})
     return response.json()['id']
 
-def poll_response(msg):
-	with open('custom_polls.json') as load_poll_data:
-		local_poll_data = json.load(load_poll_data)
-	if msg.strip().lower() == '!poll':
-		return 'Hey this is an introduction to the poll system. Check it out at the website!'
-	poll_response = msg.lower().split()
-	vote = poll_response[1]
-	state = poll_response[2]
-
-	if state not in local_poll_data[0]['states'] and state in states:
-		local_poll_data[0]['states'] 
-
-
 @app.route('/')
 def show_homepage():
  	return app.send_static_file('index.html')
@@ -198,6 +211,6 @@ def serve_js(filename):
 
 if __name__ == "__main__":
 	#user_input = input("Enter search: ")
-	#print(build_criteria(user_input))
+	#print(interpret_message(user_input))
     port = int(os.environ.get("PORT", 5000))
     app.run(host='0.0.0.0', port=port, debug=True)
