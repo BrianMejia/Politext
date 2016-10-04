@@ -38,6 +38,19 @@ function drawChart() {
     mapData.push(stateData);
   }
 
+  var table = $('<table></table>').addClass('states_table');
+  var row = $('<tr></tr>').addClass('states_header').html('<th>State</th><th>% Yes Votes</th><th>% No Votes</th>');
+
+  table.append(row);
+
+  for (var i = 3; i < mapData.length; i++) {
+    selectedData = mapData[i];
+    var row = $('<tr></tr>').addClass('states_row').html('<td>' + selectedData[0] 
+      + '</td><td>' + selectedData[1] + '%</td><td>' + selectedData[2] + '%</td>');
+    table.append(row);
+  }
+
+  $('#states_table').append(table);
 
   var data = google.visualization.arrayToDataTable(mapData);
 
