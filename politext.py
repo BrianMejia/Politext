@@ -42,17 +42,21 @@ favorable_rating_sectors = {"stein": "jill-stein", "johnson": "gary-johnson", "k
 		"obama": "obama"}
 
 @app.route("/sms", methods=['GET', 'POST'])
-def interpret_message(msg):
-	command = msg.lower().split()[0]
+def get_app_msg():
 	body = request.values.get('Body', None)
     resp = twilio.twiml.Response()
-	if command == '!help':
-		resp.messasge('Hello! Welcome to the Politext SMS system. This is a placeholder help message.')
-	elif command == '!poll':
-		resp.message(poll_response(msg))
-	else:
-		resp.message(build_criteria(msg))
+	resp.message(interpret_message(body))
 	return str(resp)
+
+def interpret_message(msg):
+	command = msg.lower().split()[0]
+
+	if command == '!help':
+		return ('Hello! Welcome to the Politext SMS system. This is a placeholder help message.')
+	elif command == '!poll':
+		return poll_response(msg)
+	else:
+		return build_criteria(msg)
 
 def poll_response(msg):
 	if msg.strip().lower() == '!poll':
