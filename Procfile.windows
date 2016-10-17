@@ -1,1 +1,1 @@
-web: py -3 politext.py
+web: python politext.py
