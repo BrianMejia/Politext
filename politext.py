@@ -12,21 +12,21 @@ app = Flask(__name__, static_folder='./static')
 Potential responses:
 President NY
 Senate AK
-Favorable Rating Romney
+Favorable Rating Johnson
 Job Approval MN
 EU Referendum
 """
 
-topics = {"president": "2016-president", "senate": "2016-senate", "house": "2016-house", 
+topics = {"president": "2016-president", "senate": "2016-senate", "house": "2016-house",
 			"favorable rating": "favorable-ratings", "job approval": "obama-job-approval",
 			"uk referendum": "uk-eu-referendum"};
-states = ["AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DC", "DE", "FL", "GA", 
-          "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", 
-          "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", 
-          "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", 
+states = ["AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DC", "DE", "FL", "GA",
+          "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD",
+          "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ",
+          "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC",
           "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY", "US"]
-obama_approval_sectors = {"independents": "-independents", "rep": "-republicans", 
-		"dem": "-democrats", "adults": "-adults", "foreign policy": "-foreign-policy", 
+obama_approval_sectors = {"independents": "-independents", "rep": "-republicans",
+		"dem": "-democrats", "adults": "-adults", "foreign policy": "-foreign-policy",
 		"health": "-health", "economy": "-economy"}
 favorable_rating_sectors = {"stein": "jill-stein", "johnson": "gary-johnson", "kaine": "tim-kaine",
 		"pence": "mike-pence", "o'malley": "martin-o-malley", "pataki": "george-pataki",
@@ -36,25 +36,29 @@ favorable_rating_sectors = {"stein": "jill-stein", "johnson": "gary-johnson", "k
 		"carson": "ben-carson", "warren": "elizabeth-warren", "huckabee": "mike-huckabee",
 		"walker": "scott-walker", "cruz": "ted-cruz", "cuomo": "andrew-cuomo",
 		"santorum": "rick-santorum", "bush": "jeb-bush", "paul": "rand-paul", "christie": "chris-christie",
-		"pelosi": "nancy-pelosi", "reid": "harry-reid", "mcconnell": "mitch-mcconnell", 
+		"pelosi": "nancy-pelosi", "reid": "harry-reid", "mcconnell": "mitch-mcconnell",
 		"boehner": "john-boehner", "rubio": "marco-rubio", "rep": "republican-party", "dem": "democratic-party",
-		"clinton": "hillary-clinton", "biden": "joe-biden", "ryan": "paul-ryan", 
+		"clinton": "hillary-clinton", "biden": "joe-biden", "ryan": "paul-ryan",
 		"obama": "obama"}
 
+@app.route("/sms", methods=['GET', 'POST'])
 def interpret_message(msg):
 	command = msg.lower().split()[0]
+	body = request.values.get('Body', None)
+    resp = twilio.twiml.Response()
 	if command == '!help':
-		return 'help pls'
+		resp.messasge('Hello! Welcome to the Politext SMS system. This is a placeholder help message.')
 	elif command == '!poll':
-		return poll_response(msg)
+		resp.message(poll_response(msg))
 	else:
-		return build_criteria(msg)
+		resp.message(build_criteria(msg))
+	return str(resp)
 
 def poll_response(msg):
-	with open('static/json/custom_polls.json') as load_poll_data:
-		local_poll_data = json.load(load_poll_data)
 	if msg.strip().lower() == '!poll':
 		return 'Hey this is an introduction to the poll system. Check it out at the website!'
+	with open('static/json/custom_polls.json') as load_poll_data:
+		local_poll_data = json.load(load_poll_data)
 	poll_response = msg.lower().split()
 	vote = poll_response[1]
 	state = poll_response[2].upper()
@@ -80,7 +84,7 @@ def build_criteria(msg):
 	msg_body = msg.lower().split()
 	sector = ''
 	potential_topics = [msg_body[0]]
-	if len(msg_body) > 1: 
+	if len(msg_body) > 1:
 		potential_topics.append(msg_body[0] + " " + msg_body[1])
 	if potential_topics[0] in topics:
 		topic = topics[potential_topics[0]]
@@ -151,7 +155,7 @@ def find_estimate(search_data, topic):
 
 	if selected_data[0] is None:
 		return "Error: There are no charts/data on this topic."
-		
+
 	return build_response(selected_data)
 
 

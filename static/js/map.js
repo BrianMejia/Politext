@@ -10,14 +10,14 @@ function drawChart() {
 
   var js_data;
 
-   $.ajax({
-        url: "static/json/custom_polls.json",
-        async: false,
-        dataType: 'json',
-        success: function(data) {
-          js_data = data;
-        }
-    });
+  $.ajax({
+      url: "static/json/custom_polls.json",
+      async: false,
+      dataType: 'json',
+      success: function(data) {
+        js_data = data;
+      }
+  });
 
   var mapData = [];
   mapData[0] = ['State', 'Yes (%)', 'No (%)'];
@@ -45,7 +45,7 @@ function drawChart() {
 
   for (var i = 3; i < mapData.length; i++) {
     selectedData = mapData[i];
-    var row = $('<tr></tr>').addClass('states_row').html('<td>' + selectedData[0] 
+    var row = $('<tr></tr>').addClass('states_row').html('<td>' + selectedData[0]
       + '</td><td>' + selectedData[1] + '%</td><td>' + selectedData[2] + '%</td>');
     table.append(row);
   }

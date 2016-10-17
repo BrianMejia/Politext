@@ -9,7 +9,41 @@
         <h3>Politext</h3>
       </div>
       <div id="content_div">
-       	<h1>This sends messages to phones. Work in progress, more text incoming.</h1>
+       	<h1>Main</h1>
+        <h4>As a part of the <a href="http://www.congressionalappchallenge.us/">
+            Congressional App Challenge</a> I wanted to provide an accessible way for people to get statistics
+            in some political elections. With this data people can see where their state stands in something like
+            2016 Presidential Election, or the Senate race.</h4>
+        <h1>Usage</h1>
+        <h4>The system has a cell phone # that you would text with your inquiry, in which it will respond to you
+            with the appropriate statistics, if there are any. Applicable topics include:
+        </h4>
+        <table>
+          <tr>
+            <th>Topic</th>
+            <th>Phone Input</th>
+          </tr>
+          <tr>
+            <td>Presidental Race</td>
+            <td>President [State]</td>
+          </tr>
+          <tr>
+            <td>Senate</td>
+            <td>Senate [State]</td>
+          </tr>
+          <tr>
+            <td>National House Race</td>
+            <td>House</td>
+          </tr>
+          <tr>
+            <td>Candidate's Favorable Rating</td>
+            <td>Favorable Rating [Candidate's Last Name]</td>
+          </tr>
+          <tr>
+            <td>Obama's Job Approval</td>
+            <td>Job Approval [Sector/State]</td>
+          </tr>
+        </table>
        	<script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1.1','packages':['intensitymap']}]}"></script>
     		<div id="chart_div"></div>
     		<div id="states_table"></div>
@@ -19,6 +53,3 @@
 
 <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
 <script type="text/javascript" src="js/map.js"></script>
-<script type="text/javascript">
-
-</script>
