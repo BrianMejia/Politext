@@ -44,9 +44,9 @@ favorable_rating_sectors = {"stein": "jill-stein", "johnson": "gary-johnson", "k
 @app.route("/sms", methods=['GET', 'POST'])
 def get_app_msg():
 	body = request.values.get('Body', None)
-	number = request.values.get('From', None)
+	number = request.values.get('FromState', None)
 	resp = twilio.twiml.Response()
-	resp.message('#', str(number), ' ', interpret_message(body))
+	resp.message('State: ' + str(number) + interpret_message(body))
 	return str(resp)
 
 def interpret_message(msg):
