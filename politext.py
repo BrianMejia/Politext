@@ -92,7 +92,7 @@ def poll_response(msg, fromState):
 	poll_response = msg.lower().split()
 	if poll_response[1] == 'results':
 		state = None
-		if len(poll_response == 2:
+		if len(poll_response) == 2:
 			state = 'US'
 		elif poll_response[2].upper() in states:
 			state = poll_response[2].upper()
