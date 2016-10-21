@@ -1,20 +1,11 @@
-[
-   {
-      "polls": {
+{
+   "polls": [
+      {
+         "states": {},
+         "question": "Who won the Debates overall? (Clinton, Trump)",
+         "choice2": "Trump",
          "id": 0,
-         "states": {
-            "NY": {
-               "no_votes": 0,
-               "yes_votes": 3,
-               "total_votes": 3
-            },
-            "NJ": {
-               "no_votes": 2,
-               "yes_votes": 4,
-               "total_votes": 6
-            }
-         },
-         "question": "Yes or No?"
+         "choice1": "Clinton"
       }
-   }
-]
+   ]
+}
