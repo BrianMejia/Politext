@@ -55,16 +55,17 @@ favorable_rating_sectors = {"stein": "jill-stein", "johnson": "gary-johnson", "k
 def get_app_msg():
 	body = request.values.get('Body', None)
 	state = request.values.get('FromState', None)
+	number = request.values.get('From', None)
 	resp = twilio.twiml.Response()
-	resp.message(interpret_message(body, state))
+	resp.message(interpret_message(body, number, state))
 	return str(resp)
 
-def interpret_message(msg, fromState):
+def interpret_message(msg, fromNumber, fromState):
 	command = msg.lower().split()[0]
 	if command == '!help':
 		return help_response(msg)
 	elif command == '!poll':
-		return poll_response(msg, fromState)
+		return poll_response(msg, fromNumber, fromState)
 	else:
 		return build_criteria(msg)
 
@@ -79,7 +80,7 @@ def help_response(msg):
 		return ('To get data from this topic, type: ' + topics_help[help_split[1]])
 	return ('Error: Topic is not valid. Please try again.')
 
-def poll_response(msg, fromState):
+def poll_response(msg, fromNumber, fromState):
 	with open('static/json/custom_polls.json') as load_poll_data:
 		local_poll_data = json.load(load_poll_data)
 	latest_poll = max(local_poll_data['polls'], key=lambda poll: poll['id'])
@@ -101,6 +102,13 @@ def poll_response(msg, fromState):
 		else:
 			return ('Error: State is not recognized for poll results.')
 
+	with open('static/json/phone_polls.json') as load_phone_duplicates:
+		local_phone_duplicates = json.load(load_phone_duplicates)
+	latest_duplicates = max(local_phone_duplicates['polls'], key=lambda poll: poll['id'])
+	latest_id = latest_duplicates['id']
+	if (fromNumber in latest_duplicates['phones']):
+		return 'Phone number already found in data!'
+
 	vote = poll_response[1]
 	state = fromState
 
@@ -120,6 +128,11 @@ def poll_response(msg, fromState):
 					return ('Error: Vote not recognized. Type !poll for help.')
 			else:
 				return ('Error: Poll command not recognized. Type !poll for help.')
+			for poll in local_phone_duplicates['polls']:
+				if poll['id'] == latest_id:
+					poll['phones'].append(fromNumber)
+			with open("static/json/phone_polls.json", "w") as outfile:
+				json.dump(local_phone_duplicates, outfile, indent=3)
 			with open("static/json/custom_polls.json", "w") as outfile:
 				json.dump(local_poll_data, outfile, indent=3)
 			return ('You voted: ' + vote.capitalize() + '. Thanks for voting!')
@@ -217,7 +230,6 @@ def find_estimate(search_data, topic):
 
 	return build_response(selected_data)
 
-
 def find_descriptive_poll(search_data, topic):
 	selected_poll = None
 	item_count = 0
@@ -276,6 +288,6 @@ def serve_js(filename):
 
 if __name__ == "__main__":
 	#user_input = input("Enter search: ")
-	#print(interpret_message(user_input, 'CA'))
-    port = int(os.environ.get("PORT", 5000))
-    app.run(host='0.0.0.0', port=port, debug=True)
+	#print(interpret_message(user_input, '+14240000000', 'CA'))
+    #port = int(os.environ.get("PORT", 5000))
+    #app.run(host='0.0.0.0', port=port, debug=True)

@@ -2,23 +2,37 @@ html, body {
 	background-color: #000066;
 	margin: 0;
 	padding: 0;
+	font-family: Arial;
+}
+
+h1 {
+	text-align: left;
+	margin-left: 4%;
+	margin-top: 5%;
 }
 
 h3 {
 	line-height: 10%;
 	position: absolute;
-	text-align: center;
+	text-align: left;
+	text-decoration: normal;
+}
+
+h4 {
+	margin-left: 2%;
 }
 
 table {
 	margin: 0 auto;
 	margin-top: 2%;
 	margin-bottom: 2%;
+	border-collapse: collapse;
 }
 
 table, th, td {
-	border: 1px solid black;
+	border: 2px solid white;
 	text-align: center;
+	padding: 10px;
 }
 
 #content_header {
@@ -41,7 +55,6 @@ table, th, td {
 	margin-top: 5%;
 	height: 100%;
 	width: 60%;
-	text-align: center;
 }
 
 #chart_div {
